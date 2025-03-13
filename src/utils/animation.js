@@ -8,7 +8,20 @@ gsap.registerPlugin(ScrollTrigger)
            scrollTrigger: {
             trigger: target,
             toggleActions: 'restart reverse restart reverse',
-            start: 'top 85%',
+            start: 'top 80%',
+            ...scrollProps,
+        }
+    })
+}
+
+ export const animationTextWithGsap = (target, animationProps, scrollProps) => {
+   gsap.to(
+    target, {
+        ...animationProps,
+           scrollTrigger: {
+            trigger: target,
+            toggleActions: 'restart none restart none',
+            start: 'top 80%',
             ...scrollProps,
         }
     })

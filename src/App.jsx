@@ -1,22 +1,21 @@
- import All from "./components/All";
+ import  Route1 from "./components/Route1";
 import {Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
-import Page from "./components/Page";
-import Sight from "./components/Sight";
+import  Route2 from "./components/Route2";
 import Target from "./components/Target";
 
  const App = () => {
   return (
-    <main className="bg-transparent">
-
-      <Routes>
-    <Route path="/" element={<Layout/>}>
-   <Route index element={<Target/>}/>
-       <Route path="products" element={<Page/>}/>
-       <Route path="apple" element={<All/>}/>
+    <main className="">
+    <Routes>
+        <Route path="/" element={<Layout/>}>
+        <Route path="store" element={<Route1/>}/>
+        <Route path="products" element={<Route2/>}/>
+        <Route index element={<Target/>}/>
      </Route>
    </Routes>
     </main>
+    
   );
 
 };

@@ -12,13 +12,7 @@ const Button = ({menuItem, setItem, filterItem}) => {
         {val}
       </button>
         ))}
-
-        {/* <button
-         onClick={() => setItem(Fill)}
-        >All</button> */}
     </div>
-
-    
   )
 }
 

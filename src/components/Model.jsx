@@ -13,6 +13,7 @@ import gsap from "gsap"
 const Model = () => {
 
     const [size, setSize] = useState('small')
+    
     const [model, setModel] = useState({
         title: 'iPhone is Pro in Neutral Titanium',
         color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
@@ -32,7 +33,7 @@ const Model = () => {
 
        useEffect(() => {
          if(size === 'large'){
-          animateWithGsapTimeline( tl, small, smallRotation , '#view1', '#view2', {
+          animateWithGsapTimeline(tl, small, smallRotation , '#view1', '#view2', {
             transform :'translateX(-100%)',
             duration: 2
           })
@@ -44,7 +45,7 @@ const Model = () => {
             duration: 2
           })
          }
-       },[])
+       },[size])
 
     useGSAP(() => {
    animationWithGsap('#heading', {opacity: 1, y:0})
@@ -73,11 +74,10 @@ const Model = () => {
                 item={model}
                 size={size}/>
 
-                <Canvas
-                
+                {/* <Canvas
                 className="w-full h-full"
                 style={{
-                  position: 'fixed',
+                  position:'fixed',
                   top:0,
                   bottom: 0,
                   left: 0,
@@ -87,8 +87,9 @@ const Model = () => {
                 eventSource={document.getElementById('root')}
                 >
                   <View.Port/>
-                </Canvas>
-            </div>
+              </Canvas> */}
+            </div> 
+            
             <div className="mx-auto w-full">
                 <p className="text-sm font-light text-center mb-5">{model.title}</p>
 

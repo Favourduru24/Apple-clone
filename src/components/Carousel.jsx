@@ -1,14 +1,18 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
-import { rightImg, watchImg } from "../utils"
-import VideoCarousel from "./VideoCarousel"
+import { rightImg , watchImg} from "../utils"
 import { animationWithGsap } from "../utils/animation"
-const Highlights = () => {
+import VideoCarousel from "./VideoCarousel"
+import CarouselSpan from "./CarouselSpan"
+
+const  Carousel = () => {
+
  useGSAP(() =>{
   animationWithGsap('#title', {opacity: 1, y: 0})
 
   animationWithGsap('.link', {opacity: 1, y: 0 , duration: 1, stagger: 0.25})
  },[])
+
   return (
     <section id="highlights" className="w-screen overflow-hidden
      h-full common-padding bg-zinc">
@@ -25,10 +29,10 @@ const Highlights = () => {
           </p>
         </div>
        </div>
-       <VideoCarousel/>
+       <CarouselSpan/>
        </div>
     </section>
   )
 }
 
-export default Highlights
+export default Carousel

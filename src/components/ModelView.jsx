@@ -10,7 +10,7 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotationState, siz
     <View
     index={index}
     id={gsapType}
-    className={`w-full h-full absolute ${index === 2 ? 'right-[-100%]' : ''} `}
+    className={`w-full h-full absolute ${index === 2 ? 'right-[-100%]' : ''}`}
     >
       <ambientLight intensity={5}/>
       <PerspectiveCamera makeDefault position={[0, 0, 4]} />
@@ -25,7 +25,7 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotationState, siz
       onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
       />
 
-      <group ref={groupRef} name={`${ index === 1} ? 'small' : 'large `} position={[0, 0, 0]}>
+      <group ref={groupRef} name={`${index === 1} ? 'small' : 'large' `} position={[0, 0, 0]}>
       <Suspense fallback={<Loader/>} 
       >
           <Phone 
@@ -35,7 +35,6 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotationState, siz
           />
       </Suspense>
       </group>
-    
     </View>
   )
 }

@@ -46,6 +46,7 @@ import frame from "/assets/images/frame.png";
   import carousel2 from "/assets/video/carousel2.mp4"
   import carousel3 from "/assets/video/carousel3.mp4"
   import carousel4 from "/assets/video/large6.mp4"
+
   
 
   //End of Pfiles 
@@ -67,6 +68,20 @@ import frame from "/assets/images/frame.png";
   import picture14 from "/assets/image/large3.jpg"
   import picture15 from "/assets/image/framer.jpg"
   import picture16 from "/assets/image/light.png"
+  import picture17 from "/assets/image/ipad.jpg"
+ import picture18 from "/assets/image/handpad.jpg"
+ import picture19 from "/assets/image/card.jpg"
+ import picture20 from "/assets/image/stand.jpg"
+ import picture22 from "/assets/image/card1.webp"
+ import picture23 from "/assets/image/card2.webp"
+ import picture24 from "/assets/image/card3.webp"
+ import picture25 from "/assets/image/card4.webp"
+ import picture26 from "/assets/image/card5.webp"
+ import picture27 from "/assets/image/card6.jpg"
+ import picture28 from "/assets/image/card7.jpg"
+ import picture29 from "/assets/image/card8.jpg"
+ import picture30 from "/assets/image/card9.jpg"
+ import picture31 from "/assets/image/card10.jpg"
 
 
 
@@ -76,10 +91,7 @@ import frame from "/assets/images/frame.png";
   export const bgBackground = giggle
   export const bgSlider = slider
   export const bgSliders = sliders
-  export const bgSlide = picture12
   export const bgView = view
-  export const appleImages = picture13
-  export const PicsFilter = picture14
   export const firstCarousel = carousel1
   export const secondCarousel = carousel2
   export const thirdCarousel = carousel3
@@ -97,10 +109,29 @@ import frame from "/assets/images/frame.png";
   export const display2 = picture9
   export const display3 = picture10
   export const display4 = picture11
+  export const bgSlide = picture12
+  export const appleImages = picture13
+  export const PicsFilter = picture14
   export const framer = picture15
   export const light = picture16
+  export const ipad = picture17
+  export const handpad = picture18
+  export const card = picture19
+  export const stand = picture20
+  export const card1 = picture22
+  export const card2 = picture23
+  export const card3 = picture24
+  export const card4 = picture25
+  export const card5 = picture26
+  export const card6 = picture27
+  export const card7 = picture28
+  export const card8 = picture29
+  export const card9 = picture30
+  export const card10 = picture31
+
     
   //End of image
+  
   //End of Pfile
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -134,4 +165,3 @@ export const chipImg = chip;
 export const frameImg = frame;
 
 //Pfile video
-

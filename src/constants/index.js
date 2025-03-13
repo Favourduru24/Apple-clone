@@ -1,77 +1,50 @@
 import {
-    blackImg,
-    blueImg,
-    highlightFirstVideo,
-    highlightFourthVideo,
-    highlightSecondVideo,
-    highlightThirdVideo,
-    firstSlide,
-    secondSlide,
-    thirdSlide,
-     fourthSlide,
-     bgSlider,
-     bgSliders,
-     bgSlide,
-    whiteImg,
-    yellowImg,
-    color1,
-    color2,
-    color3,
-    color4,
-    color5,
-    display1,
-    display2,
-    display3,
-    display4,
-    firstCarousel,
-    secondCarousel,
-    thirdCarousel,
-    framer
-
-
-
+  blackImg,
+  blueImg,
+  highlightFirstVideo,
+  highlightFourthVideo,
+  highlightSecondVideo,
+  highlightThirdVideo,
+  firstSlide,
+  secondSlide,
+  thirdSlide,
+  fourthSlide,
+  bgSlider,
+  bgSliders,
+  bgSlide,
+  whiteImg,
+  yellowImg,
+  color1,
+  color2,
+  color3,
+  color4,
+  color5,
+  display1,
+  display2,
+  display3,
+  display4,
+  framer,
+  PicsFilter
   } from "../utils";
   
-  export const navLists = [
-                        { label:"Store", href: '/' },
-                     {label: "Products",href: '/products'},
-                     {label: "iPhone",href: '/'},
-                      {label: "Support",href: '/'}];
-  
-  export const hightlightsSlides = [
+  export const navLinks = [
     {
       id: 1,
-      textLists: [
-        "Enter A17 Pro.",
-        "Game‑changing chip.",
-        "Groundbreaking performance.",
-      ],
-      video: highlightFirstVideo,
-      videoDuration: 4,
+      name: 'iPhone',
+      href: '/',
     },
     {
       id: 2,
-      textLists: ["Titanium.", "So strong. So light. So Pro."],
-      video: highlightSecondVideo,
-      videoDuration: 5,
+      name: 'Product',
+      href: '/products',
     },
     {
       id: 3,
-      textLists: [
-        "iPhone 15 Pro Max has the",
-        "longest optical zoom in",
-        "iPhone ever. Far out.",
-      ],
-      video: highlightThirdVideo,
-      videoDuration: 2,
-    },
-    {
-      id: 4,
-      textLists: ["All-new Action button.", "What will yours do?."],
-      video: highlightFourthVideo,
-      videoDuration: 3.63,
+      name: 'Store',
+      href: '/store',
     },
   ];
+  
   export const hightlistsSlides = [
     {
       id: 1,
@@ -107,9 +80,72 @@ import {
     },
   ];
   
+  export const hightlightsSlides = [
+    {
+      id: 1,
+      textLists: [
+        "Enter A17 Pro.",
+        "Game‑changing chip.",
+        "Groundbreaking performance.",
+      ],
+      video: highlightFirstVideo,
+      videoDuration: 4,
+    },
+    {
+      id: 2,
+      textLists: ["Titanium.", "So strong. So light. So Pro."],
+      video: highlightSecondVideo,
+      videoDuration: 5,
+    },
+    {
+      id: 3,
+      textLists: [
+        "iPhone 15 Pro Max has the",
+        "longest optical zoom in",
+        "iPhone ever. Far out.",
+      ],
+      video: highlightThirdVideo,
+      videoDuration: 2,
+    },
+    {
+      id: 4,
+      textLists: ["All-new Action button.", "What will yours do?."],
+      video: highlightFourthVideo,
+      videoDuration: 3.63,
+    },
+  ];
+
    export const Glider = [
-    {images: [color1 , color2,  color3, color4, color5 ], description: ["testing1","testing2", "testing3", "testing4", "testing5"]}
-   ]
+     {
+      id:1,
+      img: color1 , 
+      title: 'iPhone 15 Pro in all Titanium',
+      color:'#C9C8C2'
+     },
+     {
+      id:2,
+      img: color2 , 
+      title: 'iPhone 15 Pro in Natural Titanium',
+      color:'#6f6c64'
+     },
+     {
+      id:3,
+      img: color3 , 
+      title: 'iPhone 15 Pro in Blue Titanium',
+      color:'#ffffff'
+    },
+     {
+      id:4,
+      img: color4 , 
+      title: 'iPhone 15 Pro in Desert Titanium',
+      color:'#ffe7b9'
+    },
+     {
+      id:5,
+      img: color5 , 
+      title: 'iPhone 15 Pro in Black Titanium',
+      color:'#8F8A81'
+    }]
     
 
   export const models = [
@@ -175,41 +211,32 @@ import {
     }
   ]
 
-  export const Fill = [
-    {
+  export const Fill = [{
       id: 1,
-      img:bgSlider,
-      text:"Just hit record in the Notes or Phone app to capture audio recordings and transcripts. Apple Intelligence generates summaries of your transcripts, so you can get the most important info at a glance.",
-      description: 'Boost your productivity',
-      // headText:"With all-new superpowers, Siri will be able to assit you like never before.",
-      headText:"Explore new tools that help you write, focus, and communicate.",
-      descriptions:'Priority messages in Mail elevate time-sensitive messages to the top of your inbox — like an invitation that has a deadline today or a check-in reminder for your flight this afternoon.'
+      video:bgSlider,
+      text1:"Awareness of your personal context enables Siri to  help you in ways that are unique to you. </span>Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy",
+      text2: 'Just hit record in the Notes or Phone app to capture audio recordings and transcripts. Apple Intelligence generates summaries of your transcripts, so you can get the most important info at a glance.',
+      text3:"Priority messages in Mail elevate time-sensitive messages to the top of your inbox — like an invitation that has a deadline today or a check-in reminder for your flight this afternoon.",
+      button: "Boost your Porductivity"
+       
     },
-    {
+      { 
       id: 2,
-      img:display3,
-      text:"The Image Playground app lets you create unique images in seconds based on a description, a concept, or even a person from your Photos library. Experiment with image styles like animation, illustration, and sketch.",
-      description: "Express yourself visually",
-      headText:"Create fun,  original Images that are truly personal to you.",
-      descriptions: "With Clean Up, you can remove distracting background objects from your photos with just a tap — so you can perfect a shot while staying true to the original image."
+      video:bgSliders,
+      text1:"help you in ways that are unique to you. </span>Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy.",
+      text2: "The Image Playground app lets you create unique images in seconds based on a description, a concept, or even a person from your Photos library. Experiment with image styles like animation, illustration, and sketch.",
+      text3:"With Clean Up, you can remove distracting background objects from your photos with just a tap — so you can perfect a shot while staying true to the original image.",
+     button: "Express yourself visually"
     },
     {
       id: 3,
-      img:bgSliders,
-      text:"Richer language understanding and an enhanced voice make communicating with Siri even more natural. For example, if you stumble over your words, Siri still knows what you’re getting at.",
-      description: "A new era for Siri's ",
-      headText:"With all-new superpowers, Siri will be able to assit you like never before.",
-      descriptions: "Not sure how to do something on iPhone, like adjust the background blur on a portrait? With expansive product knowledge, Siri can give you step-by-step instructions in a snap.'",
-    },
-  ]
+      image:PicsFilter,
+      text1:"Awareness of your personal context enables Siri to help you in ways that are unique to you. </span>Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy.",
+      text2: 'Richer language understanding and an enhanced voice make communicating with Siri even more natural. For example, if you stumble over your words, Siri still knows what you’re getting at.',
+      text3:"Not sure how to do something on iPhone, like adjust the background blur on a portrait? With expansive product knowledge, Siri can give you step-by-step instructions in a snap.'",
+       button: "A new era of siri's"
+    }]
 
-  export const Apple = [{
-        bgImg: framer,
-        headText:"iPhone 16 Pro",
-        subText: "Hello,Apple Intelligence "
-     }, 
-  {
-
-   }]
+   
 
    
