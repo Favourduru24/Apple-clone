@@ -74,7 +74,7 @@ const Model = () => {
                 item={model}
                 size={size}/>
 
-                {/* <Canvas
+                <Canvas
                 className="w-full h-full"
                 style={{
                   position:'fixed',
@@ -87,7 +87,7 @@ const Model = () => {
                 eventSource={document.getElementById('root')}
                 >
                   <View.Port/>
-              </Canvas> */}
+              </Canvas>
             </div> 
             
             <div className="mx-auto w-full">
