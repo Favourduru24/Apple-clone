@@ -7,28 +7,34 @@ import { animationWithGsap } from '../utils/animation'
  const Home = () => {
     useGSAP(() => {
       animationWithGsap('#text', {opacity:1, delay:1,})
-      gsap.to('#play', {opacity:1,  delay: 2, y: -5})
+      gsap.to('#cta', { opacity: 1, y: -50, delay: 2 })
     },[])
 
   return (
-     <section className=' nav-height w-full  flex flex-col items-center bg-black'>
-        <div className='h-5/6 w-full flex-center flex-col '>
-      <p id='text' className="absolute top-12 text-center pt-14 sm:text-2xl z-20 mt-10 opacity-0 max-lg:text-lg"
-          >iPhone 16 Pro</p>
-          <p id='text' className="absolute top-20 text-center pt-14 sm:text-5xl z-20 mt-10 opacity-0 max-lg:text-3xl font-semibold"
-          >Hello, Apple Intelligence.</p> 
-          <div className='md:w-10/12 w-full sm:mt-14'> 
+     <section className='nav-height w-full flex flex-col items-center relative justify-center'>
+        <div className='h-3/4 w-full flex-center flex-col justify-center'>
+              
+          <div className='md:w-10/12 w-full sm:mt-24'> 
           <video autoPlay playsInline={true} muted className='pointer-events-none relative '>
             <source src={headVideo} alt="video/mp3" key={headVideo}/>
           </video>
           </div>
-          </div>
+           <div className='absolute absolute sm:top-[15%] top-[12%] left-1/2 -translate-x-1/2 text-white z-20  '>
+                 <div className='flex flex-col items-center gap-2 '>
+                     <p className='sm:text-3xl max-lg:text-lg opacity-0' id='text'>iPhone 16 Pro</p>
+                     <p className='xl:text-6xl lg:text-4xl whitespace-nowrap font-semibold md:text-4xl text-3xl opacity-0' id='text'>Hello, Apple Intelligence</p>
+                 </div>
+              </div>
+           </div>
 
-        <div id='play' className='absolute z-10 bottom-32 tranform -translate-x-1/2 text-center left-1/2 bg-blue px-4 py-2 rounded-full  opacity-0 mb-5 sm:translate-y-1/2'>
-        <p className=''>Buy</p>
-        </div>
-          <p id='play' className='absolute z-20 bottom-28 tranform -translate-x-1/2 translate-y-20 opacity-0 text-center left-1/2 max-sm:whitespace-nowrap'>From $999 or $41.62/mo. for 24mo</p>
-          <p id='play' className=' text-gray absolute z-20 bottom-20 tranform -translate-x-1/2 translate-y-20 opacity-0 text-center left-1/2 max-sm:whitespace-nowrap'>Apple Intelligence coming this fall</p>
+         <div
+        id="cta"
+        className="flex flex-col items-center opacity-0 translate-y-20"
+      >
+        <a href="#highlights" className="btn">Buy</a>
+        <p className="font-normal text-xl ">From $199/month or $999</p>
+        <p className=' text-gray text-center max-sm:whitespace-nowrap mt-2'>Apple Intelligence coming this fall</p> 
+      </div>
 
     </section>
   )

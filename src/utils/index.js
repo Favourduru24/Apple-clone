@@ -82,6 +82,7 @@ import frame from "/assets/images/frame.png";
  import picture29 from "/assets/image/card8.jpg"
  import picture30 from "/assets/image/card9.jpg"
  import picture31 from "/assets/image/card10.jpg"
+ import picture32 from "/assets/image/lady.webp"
 
 
 
@@ -128,6 +129,7 @@ import frame from "/assets/images/frame.png";
   export const card8 = picture29
   export const card9 = picture30
   export const card10 = picture31
+  export const card11 = picture32
 
     
   //End of image

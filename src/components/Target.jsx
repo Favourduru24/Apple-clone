@@ -5,14 +5,13 @@ import Card from './Card'
 
 const Target = () => {
 
-   
   return (
     <section className='bg-white'>
        <div className='mb-3'>
-       <Link to="/apple">
+       <Link to="/store">
         <Sight 
         bgImg={framer}
-         bgColor="black "
+         color="black"
         headText="Hello, Apple Intelligence"
         subText=" iPhone 16 Pro"
         title="Apple Intelligence coming this fall"
@@ -22,7 +21,7 @@ const Target = () => {
         <Link to='/products'>
         <Sight 
         bgImg={light}
-        bgColor="blue"
+        color="blue"
         title="Apple Intelligence coming this fall"
         />
         </Link>
@@ -31,16 +30,19 @@ const Target = () => {
         <Sight 
         bgImg={handpad}
         bgColor="blue"
-         container=""
+         bgText="iPhone"
         title="Apple Intelligence coming this fall"
+        color="blue"
          button
         />
         </Link>
-        <Link to='/products'>
+        <Link to='/store'>
         <Sight 
         bgImg={ipad}
         bgColor="blue"
-        title="Apple Intelligence coming this fall"
+        bgText="iPad"
+        title="Meet the iPhone 16 family"
+        color="black"
         button
         />
         </Link>
@@ -49,21 +51,22 @@ const Target = () => {
          <Link to='/products'>
         <Sight 
         bgImg={card}
-        bgColor="blue"
-        title="Apple Intelligence coming this fall"
+        bgText="Trade In"
+        title="Get up to 3% Daily Cash back."
         button
         />
         </Link>
-         <Link to='/products'>
+         <Link to='/store'>
         <Sight 
         bgImg={stand}
-        bgColor="blue"
-        title="Apple Intelligence coming this fall"
+        bgText="Trade In"
+        title="Built for iPhone intelligent."
         button
+         color="white"
         />
         </Link>
          </div>
-        <Card/>
+         <Card/>
     </section>
    
   )

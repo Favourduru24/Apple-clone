@@ -23,8 +23,13 @@ import {
   display2,
   display3,
   display4,
-  framer,
-  PicsFilter
+  PicsFilter,
+  card1, card2, 
+  card3,card4,
+  card5 ,
+  card6,
+  card8, card9,
+  card10, card11
   } from "../utils";
   
   export const navLinks = [
@@ -236,6 +241,49 @@ import {
       text3:"Not sure how to do something on iPhone, like adjust the background blur on a portrait? With expansive product knowledge, Siri can give you step-by-step instructions in a snap.'",
        button: "A new era of siri's"
     }]
+
+    export const Boxes = [
+      {
+       image: card1,
+       text:'Arcade'  
+     },
+      {
+       image: card3,
+       text:'Podcast'  
+     },
+     {
+       image: card2,
+       text:'Arcade'  
+     },
+      {
+       image: card4,
+       text:'Fitness +'  
+     },
+      {
+       image: card6,
+       text:'Entertainment'  
+     },
+      {
+       image: card5,
+       text:'Fitness +'  
+     },
+      {
+       image: card11,
+       text:'Music'  
+     },
+      {
+       image: card8,
+       text:'XCamera'  
+     },
+      {
+       image: card9,
+       text:'Explore +'  
+     },
+      {
+       image: card10,
+       text:'Gamming'  
+     },
+     ]
 
    
 
