@@ -7,8 +7,8 @@ const Sight = ({bgImg, headText, subText,   title, button, bgText, color}) => {
       <div className={`bg-${color} z-20 bg-cover items-center flex justify-center relative`}>
           <div className='flex-col flex   items-center relative'>
             <div className="absolute top-32">
-             <p className='text-center text-3xl font-semibold my-2 max-md:text-2xl'>{subText ? subText : ''}</p>
-             <p className='text-center text-6xl font-semibold mb-4 max-md:text-3xl whitespace-nowrap '>{headText ? headText : ''}</p>
+             <p className='text-center text-3xl font-semibold my-2 max-md:text-2xl font-serif'>{subText ? subText : ''}</p>
+             <p className='text-center text-6xl font-semibold mb-4 max-md:text-3xl whitespace-nowrap font-serif'>{headText ? headText : ''}</p>
              
              
             </div> 

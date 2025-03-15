@@ -11,29 +11,25 @@ import { animationWithGsap } from '../utils/animation'
     },[])
 
   return (
-     <section className='nav-height w-full flex flex-col items-center relative justify-center'>
-        <div className='h-3/4 w-full flex-center flex-col justify-center'>
-              
-          <div className='md:w-10/12 w-full sm:mt-24'> 
-          <video autoPlay playsInline={true} muted className='pointer-events-none relative '>
+     <section className='min-h-screen w-full flex flex-col items-center justify-center bg-black'>
+
+          <div className='md:w-10/12 w-9/12 sm:mt-14 h-[50rem] relative'>
+            
+          <video autoPlay playsInline={true} muted className='pointer-events-none w-full h-full'>
             <source src={headVideo} alt="video/mp3" key={headVideo}/>
           </video>
-          </div>
-           <div className='absolute absolute sm:top-[15%] top-[12%] left-1/2 -translate-x-1/2 text-white z-20  '>
-                 <div className='flex flex-col items-center gap-2 '>
-                     <p className='sm:text-3xl max-lg:text-lg opacity-0' id='text'>iPhone 16 Pro</p>
-                     <p className='xl:text-6xl lg:text-4xl whitespace-nowrap font-semibold md:text-4xl text-3xl opacity-0' id='text'>Hello, Apple Intelligence</p>
-                 </div>
-              </div>
-           </div>
-
-         <div
+            <div className='absolute top-32 w-full flex justify-center flex-col items-center sm:pt-5 gap-2'>
+         <p className='text-2xl my-2 sm:my-0 opacity-0 font-serif ' id='text'>iPhone 16 Pro</p>
+          <p id="text" className='md:text-5xl z-20 opacity-0 text-2xl font-semibold whitespace-nowrap font-serif'>Hello, Apple Intelligence</p>
+            </div>
+            <div
         id="cta"
-        className="flex flex-col items-center opacity-0 translate-y-20"
+        className="flex flex-col items-center opacity-0 translate-y-20 bottom-0 absolute w-full justify-center "
       >
-        <a href="#highlights" className="btn">Buy</a>
+        <a href="#highlights" className="btn gap-5">Buy</a>
         <p className="font-normal text-xl ">From $199/month or $999</p>
         <p className=' text-gray text-center max-sm:whitespace-nowrap mt-2'>Apple Intelligence coming this fall</p> 
+      </div>
       </div>
 
     </section>
