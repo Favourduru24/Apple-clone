@@ -1,7 +1,8 @@
 import {useState} from "react"
-import { bgSlider, color7 } from "../utils"
+import { bgSlider, color7, grid2 } from "../utils"
 import { Fill } from "../constants"
 import { PicsFilter } from "../utils"
+import { grid1 } from "../utils"
 
   const Filter2 = () => { 
    
@@ -11,7 +12,9 @@ import { PicsFilter } from "../utils"
       text1:"Awareness of your personal context enables Siri to  help you in ways that are unique to you. </span>Need your passport number while  booking a   flight Siri can help find what you’re looking for, without compromising your privacy",
       text2: 'Just hit record in the Notes or Phone app to capture audio recordings and transcripts. Apple Intelligence generates summaries of your transcripts, so you can get the most important info at a glance.',
       text3:"Priority messages in Mail elevate time-sensitive messages to the top of your inbox — like an invitation that has a deadline today or a check-in reminder for your flight this afternoon.",
-      button:'hello'
+      button:'hello',
+      img1: grid1,
+      img2: grid2
     })
   
       const [firstcol, setFirstCol] = useState(true)
@@ -58,22 +61,27 @@ import { PicsFilter } from "../utils"
              </div>
            }
            </div> 
-           <p className="reply text-[14px] text-center max-w-[20rem] mt-8 mb-16 text-gray ">{gallary.text1}</p>
+           <p className="reply text-[16px] text-center max-w-[20rem] mt-8 mb-16 text-gray ">{gallary.text1}</p>
 
            </div>
            </div> 
 
            <div className="flex flex-col gap-8 justify-center">
             <div className="h-[20rem] bg-black text-white w-[25rem] rounded-[1.5rem] flex flex-col items-center">
-              <p className="text-[14px] text-center max-w-[20rem] mt-8 mb-16 text-gray ">
+              <p className="text-[16px] text-center max-w-[20rem] mt-8 mb-16 text-gray ">
               {gallary.text2}
             </p> 
+                <div className="w-20 h-20">
+                   <img src={gallary.img1} alt="img" className="w-full h-full"/>
+                </div>
             </div>
             <div className="h-[20rem] bg-black text-white w-[25rem] rounded-[1.5rem] flex flex-col items-center">
-              <p className="text-[14px] text-center max-w-[20rem] mt-8 mb-16 text-gray ">
+              <p className="text-[16px] text-center max-w-[20rem] mt-8 mb-16 text-gray ">
                {gallary.text3}
               </p>
-               
+               <div className="w-20 h-20">
+                   <img src={gallary.img2} alt="img" className="w-full h-full"/>
+                </div>
             </div>  
              </div>  
              </div> 

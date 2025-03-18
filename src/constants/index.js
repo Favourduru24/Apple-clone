@@ -12,6 +12,7 @@ import {
   bgSlider,
   bgSliders,
   bgSlide,
+  appleImg,
   whiteImg,
   yellowImg,
   color1,
@@ -29,7 +30,12 @@ import {
   card5 ,
   card6,
   card8, card9,
-  card10, card11
+  card10, card11,
+  grid1,
+  grid2,
+  grid3,
+  grid4,
+  camera
   } from "../utils";
   
   export const navLinks = [
@@ -219,27 +225,33 @@ import {
   export const Fill = [{
       id: 1,
       video:bgSlider,
-      text1:"Awareness of your personal context enables Siri to  help you in ways that are unique to you. </span>Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy",
+      text1:"Awareness of your personal context enables Siri to  help you in ways that are unique to you. Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy",
       text2: 'Just hit record in the Notes or Phone app to capture audio recordings and transcripts. Apple Intelligence generates summaries of your transcripts, so you can get the most important info at a glance.',
       text3:"Priority messages in Mail elevate time-sensitive messages to the top of your inbox — like an invitation that has a deadline today or a check-in reminder for your flight this afternoon.",
+      img1:grid1,
+      img2:grid2,
       button: "Boost your Porductivity"
        
     },
       { 
       id: 2,
       video:bgSliders,
-      text1:"help you in ways that are unique to you. </span>Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy.",
+      text1:"help you in ways that are unique to you. Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy.",
       text2: "The Image Playground app lets you create unique images in seconds based on a description, a concept, or even a person from your Photos library. Experiment with image styles like animation, illustration, and sketch.",
       text3:"With Clean Up, you can remove distracting background objects from your photos with just a tap — so you can perfect a shot while staying true to the original image.",
-     button: "Express yourself visually"
+     button: "Express yourself visually",
+      img1: grid3,
+      img2: grid4
     },
     {
       id: 3,
       image:PicsFilter,
-      text1:"Awareness of your personal context enables Siri to help you in ways that are unique to you. </span>Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy.",
+      text1:"Awareness of your personal context enables Siri to help you in ways that are unique to you. Need your passport number while booking a flight? Siri can help find what you’re looking for, without compromising your privacy.",
       text2: 'Richer language understanding and an enhanced voice make communicating with Siri even more natural. For example, if you stumble over your words, Siri still knows what you’re getting at.',
       text3:"Not sure how to do something on iPhone, like adjust the background blur on a portrait? With expansive product knowledge, Siri can give you step-by-step instructions in a snap.'",
-       button: "A new era of siri's"
+       button: "A new era of siri's",
+       img1: appleImg,
+       img2: camera
     }]
 
     export const Boxes = [

@@ -83,6 +83,12 @@ import frame from "/assets/images/frame.png";
  import picture30 from "/assets/image/card9.jpg"
  import picture31 from "/assets/image/card10.jpg"
  import picture32 from "/assets/image/lady.webp"
+ import picture33 from "/assets/image/grid1.png"
+ import picture34 from "/assets/image/chip2.png"
+ import picture35 from "/assets/image/grid4.png"
+ import picture36 from "/assets/image/grid5.png"
+ import picture37 from "/assets/image/camera.png"
+ import picture38 from "/assets/image/appleVideo.png"
 
 
 
@@ -130,6 +136,12 @@ import frame from "/assets/images/frame.png";
   export const card9 = picture30
   export const card10 = picture31
   export const card11 = picture32
+  export const grid1 = picture33
+export const grid2 = picture34
+export const grid3 = picture35
+export const grid4 = picture36
+export const camera = picture37
+export const bigText = picture38
 
     
   //End of image

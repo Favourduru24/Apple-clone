@@ -192,7 +192,7 @@ const Model = () => {
               size={size}
             />
 
-            <Canvas
+            {/* <Canvas
               className="w-full h-full"
               style={{
                 position: 'fixed',
@@ -205,7 +205,7 @@ const Model = () => {
               eventSource={document.getElementById('root')}
             >
               <View.Port />
-            </Canvas>
+            </Canvas> */}
           </div>
 
           <div className="mx-auto w-full">
@@ -218,13 +218,13 @@ const Model = () => {
                 ))}
               </ul>
 
-              <button className="size-btn-container">
+              {/* <button className="size-btn-container">
                 {sizes.map(({ label, value }) => (
                   <span key={label} className="size-btn" style={{ backgroundColor: size === value ? 'white' : 'transparent', color: size === value ? 'black' : 'white'}} onClick={() => setSize(value)}>
                     {label}
                   </span>
                 ))}
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
