@@ -11,7 +11,6 @@ import {
   fourthSlide,
   bgSlider,
   bgSliders,
-  bgSlide,
   appleImg,
   whiteImg,
   yellowImg,
